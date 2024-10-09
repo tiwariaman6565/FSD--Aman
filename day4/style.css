@@ -10,7 +10,7 @@
 }
 .grid-items{
     border: 5px solid green;
-    height: 200px;
+    background-color: blueviolet;
 }
 .item1{
     grid-column-start: 1;
