@@ -9,10 +9,22 @@
     <a href="https://abes.ac.in/">ABES</a>
     <button id="btn">Change the Link</button>
     <script>
+        let s=true;
         changelink=()=>{
             let a1=document.querySelector('a');
-            a1.setAttribute('href','https://aktu.ac.in/');
+            if(s)
+            {
+                a1.setAttribute('href','https://aktu.ac.in/');
             a1.textContent='AKTU Website';
+            s=false;
+
+            }
+            else{
+                a1.setAttribute('href','https://abes.ac.in/');
+                a1.textContent='ABES Website';
+                s=true;
+            }
+           
         }
         let btn=document.querySelector('#btn');
         btn.addEventListener('click',changelink);
